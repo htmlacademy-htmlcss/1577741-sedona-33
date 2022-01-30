@@ -12,7 +12,7 @@
         </a>
        <ul class="site-navigation">
         <li class="site-navigation-item">
-          <a class="navigation-link" href="#">Главная</a>
+          <a class="navigation-link" href="index.html">Главная</a>
          </li>
 
         <li class="site-navigation-item">
@@ -26,10 +26,10 @@
 
       <ul class="navigation-list navigation-user">
           <li class="site-navigation-item">
-            <a href="#">Поиск</a>
+            <a class="visually-hidden" href="#">Поиск</a>
           </li>
           <li class="site-navigation-item">
-            <a href="#">Избранное</a>
+            <a class="visually-hidden" href="#">Избранное</a>
           </li>
           <li class="site-navigation-item">
             <button type="button">Хочу сюда</button>
@@ -39,8 +39,11 @@
     </header>
 
 <main>
-<h1>Гостиницы Седоны</h1>
 <section class="filters">
+  <img src="" alt="Гостиницы Седоны">
+  <h1>Гостиницы Седоны</h1>
+  <a href="#"><img src="" alt="Домой"></a>
+  <p>Гостиницы</p>
   <h2 class="visually-hidden">Фильтры</h2>
   <form id="filters-form" class="filters-form" action="#" method="get">
     <fieldset>
@@ -70,7 +73,7 @@
             <label for="filters-form-price-to" class="visually-hidden">Стоимость, до</label>
             <input type="text" name="filters-form-price-to" id="filters-form-price-to" placeholder="до 9000" value="9000">
     </fieldset>
-    <button type="reset">Применить</button>
+    <button type="submit">Применить</button>
     <button type="reset">Сбросить</button>
   </form>
 
@@ -78,54 +81,78 @@
 
 <section class="catalog">
   <h2 class="visually-hidden">Каталог</h2>
+
+<div class="mode-tile">
+  <img src="" alt="Плитка">
+</div>
+
+<div class="mode-slideshow">
+  <img src="" alt="Слайды">
+</div>
+
+<div class="mode-list">
+  <img src="" alt="Список">
+</div>
+
 <h2>Найдено гостиниц: 38</h2>
-<a href="#" class="sort-asc">Сначала дешёвые</a>
+
+<select>
+  <option checked>Сначала дешёвые</option>
+  <option>Сначала дорогие</option>
+</select>
+
 <ul class="catalog-list">
   <li class="catalog-list-item">
-    <h3>Amara Resort & Spa</h3>
     <img src=""  alt="Отель Amara Resort & Spa">
+    <h3>Amara Resort & Spa</h3>
     <p>Гостиница</p>
     <p>От 4000 ₽</p>
     <button type="button">Подробнее</button>
       <button type="button">В Избранное</button>
-      <span class="star checked"></span>
-      <span class="star checked"></span>
-      <span class="star checked"></span>
-      <span class="star checked"></span>
+      <div class="star">
+        <img src="" alt="рейтинг Amara Resort & Spa">
+      </div>
       <p>Рейтинг: 8,5</p>
   </li>
+
   <li class="catalog-list-item">
-    <h3>Desert Quail Inn</h3>
     <img src="" alt="Отель Desert Quail Inn">
+    <h3>Desert Quail Inn</h3>
     p>Гостиница</p>
     <p>От 3000 ₽</p>
     <button type="button">Подробнее</button>
       <button type="button">В Избранное</button>
-      <span class="star checked"></span>
-      <span class="star checked"></span>
-      <span class="star checked"></span>
+      <div class="star">
+        <img src="" alt="рейтинг Desert Quail Inn">
+      </div>
       <p>Рейтинг: 8,5</p>
   </li>
+
+
   <li class="catalog-list-item">
-    <h3>Villas at Poco Diablo</h3>
     <img src=""  alt="Отель Villas at Poco Diablo">
+    <h3>Villas at Poco Diablo</h3>
     <p>Гостиница</p>
     <p>От 2000 ₽</p>
     <button type="button">Подробнее</button>
       <button type="button">В Избранное</button>
-      <span class="star checked"></span>
-      <span class="star checked"></span>
+      <div class="star">
+        <img src="" alt="рейтинг Villas at Poco Diablo">
+      </div>
       <p>Рейтинг: 9,2 </p>
   </li>
+
+
   <li class="catalog-list-item">
-    <h3>GreenTree Inn</h3>
     <img src=""  alt="Отель GreenTree Inn">
+    <h3>GreenTree Inn</h3>
     <p>Гостиница</p>
     <p>От 3000 ₽</p>
     <button type="button">Подробнее</button>
       <button type="button">В Избранное</button>
-      <span class="star checked"></span>
-      <span class="star checked"></span>
+      <div class="star">
+        <img src="" alt="рейтинг GreenTree Inn">
+      </div>
       <p>Рейтинг: 9,2 </p>
   </li>
   </ul>
@@ -139,9 +166,14 @@
      <li class="page-item"><a href="#" title="...">›</a></li>
      <li class="page-item"><a href="#" title="На страницу номер 10">›</a></li>
     </ul>
-   </div>
-  <a href="#" class="sort-asc">4</a>
- <p>Гостиниц на странице:</p>
+   <p>Гостиниц на странице:</p>
+   <select>
+    <option checked>4</option>
+    <option>5</option>
+    <option>2</option>
+    <option>3</option>
+  </select>
+  </div>
 </section>
 
 
@@ -160,19 +192,17 @@
 <footer class="main-footer">
     <ul class="social-list">
       <li class="social-list-item">
-          <a href="https://twitter.com/htmlacademy_ru">Twitter</a>
+          <a href="https://twitter.com/htmlacademy_ru" alt="Twitter"></a>
       </li>
       <li class="social-list-item">
-          <a href="https://www.facebook.com/htmlacademy">Facebook</a>
+          <a href="https://www.facebook.com/htmlacademy" alt="Facebook"></a>
       </li>
       <li class="social-list-item">
-          <a href="https://www.youtube.com/c/HTMLAcademyRUS">Youtube</a>
+          <a href="https://www.youtube.com/c/HTMLAcademyRUS" alt="Youtube"></a>
       </li>
   </ul>
   <a href="tel:+7(812)812-12-12">+7(812)812-12-12</a>
-  <a class="logo">
-    <a href="https://htmlacademy.ru/">htmlacademy</a>
-  </a>
+  <a href="https://htmlacademy.ru"><img src="" alt="логотип htmlacademy"></a>
 </nav>
 </footer>
 </body>
