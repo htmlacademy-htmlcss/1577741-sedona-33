@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
@@ -73,8 +74,8 @@
             <label for="filters-form-price-to" class="visually-hidden">Стоимость, до</label>
             <input type="text" name="filters-form-price-to" id="filters-form-price-to" placeholder="до 9000" value="9000">
     </fieldset>
-    <button type="submit">Применить</button>
-    <button type="reset">Сбросить</button>
+    <button class="submit" type="submit">Применить</button>
+    <p class="reset">Сбросить</p>
   </form>
 
 </section>
@@ -83,15 +84,15 @@
   <h2 class="visually-hidden">Каталог</h2>
 
 <div class="mode-tile">
-  <img src="" alt="Плитка">
+  <img src="images/tile.svg" alt="Плитка">
 </div>
 
 <div class="mode-slideshow">
-  <img src="" alt="Слайды">
+  <img src="images/slideshow.svg" alt="Слайды">
 </div>
 
 <div class="mode-list">
-  <img src="" alt="Список">
+  <img src="images/list.svg" alt="Список">
 </div>
 
 <h2>Найдено гостиниц: 38</h2>
@@ -107,10 +108,10 @@
     <h3>Amara Resort & Spa</h3>
     <p>Гостиница</p>
     <p>От 4000 ₽</p>
-    <button type="button">Подробнее</button>
-      <button type="button">В Избранное</button>
-      <div class="star">
-        <img src="" alt="рейтинг Amara Resort & Spa">
+    <button class="more" type="button">Подробнее</button>
+      <button class="favourite" type="button">В Избранное</button>
+      <div class="star-amara">
+        <img src="images/rate-4.png" alt="рейтинг Amara Resort & Spa">
       </div>
       <p>Рейтинг: 8,5</p>
   </li>
@@ -120,10 +121,10 @@
     <h3>Desert Quail Inn</h3>
     <p>Гостиница</p>
     <p>От 3000 ₽</p>
-    <button type="button">Подробнее</button>
-      <button type="button">В Избранное</button>
-      <div class="star">
-        <img src="" alt="рейтинг Desert Quail Inn">
+    <button class="more" type="button">Подробнее</button>
+      <button class="favourite" type="button">В Избранное</button>
+      <div class="star-desert">
+        <img src="images/rate-3.png" alt="рейтинг Desert Quail Inn">
       </div>
       <p>Рейтинг: 8,5</p>
   </li>
@@ -134,10 +135,10 @@
     <h3>Villas at Poco Diablo</h3>
     <p>Гостиница</p>
     <p>От 2000 ₽</p>
-    <button type="button">Подробнее</button>
-      <button type="button">В Избранное</button>
-      <div class="star">
-        <img src="" alt="рейтинг Villas at Poco Diablo">
+    <button class="more" type="button">Подробнее</button>
+      <button class="favourite" type="button">В Избранное</button>
+      <div class="star-villas">
+        <img src="images/rate-2.png" alt="рейтинг Villas at Poco Diablo">
       </div>
       <p>Рейтинг: 9,2 </p>
   </li>
@@ -148,15 +149,15 @@
     <h3>GreenTree Inn</h3>
     <p>Гостиница</p>
     <p>От 3000 ₽</p>
-    <button type="button">Подробнее</button>
-      <button type="button">В Избранное</button>
-      <div class="star">
-        <img src="" alt="рейтинг GreenTree Inn">
+    <button class="more" type="button">Подробнее</button>
+      <button class="favourite" type="button">В Избранное</button>
+      <div class="star-green">
+        <img src="images/rate-2.png" alt="рейтинг GreenTree Inn">
       </div>
       <p>Рейтинг: 9,2 </p>
   </li>
   </ul>
-  <button type="button">Загрузить еще</button>
+  <button class="load" type="button">Загрузить еще</button>
   <div class="page-list">
     <ul class="page">
      <li class="page-current first"><span>1</span></li>
