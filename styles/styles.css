@@ -22,6 +22,63 @@ body {
   background-color: #ffffff;
 }
 
+/*Global*/
+.submit {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #83B3D3;
+}
+
+.reset {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+legend {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.index h2 {
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+select {
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+h2{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.button {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #83B3D3;
+}
+
+/*Главная*/
 .main-header {
   color: #000000;
   background-color: #ffffff;
@@ -81,20 +138,9 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+/*Факты*/
 .facts {
   text-align: center;
-}
-
-h2{
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
 }
 
 .hotels p, .form-send p {
@@ -124,15 +170,6 @@ h3 {
   line-height: 26px;
 }
 
-.button {
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #83B3D3;
-}
-
 .devils-bridge {
   color: #ffffff;
   background-color: #83B3D3;
@@ -143,6 +180,7 @@ h3 {
   background-color: #83B3D3;
 }
 
+/*Подвал*/
 .main-footer {
   background-color: #ffffff;
 }
@@ -154,6 +192,7 @@ h3 {
   text-align: center;
 }
 
+/*Фильтры*/
 .filters {
   font-size: 18px;
   line-height: 24px;
@@ -168,51 +207,6 @@ h3 {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-}
-
-.submit {
-  font-size: 16px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #83B3D3;
-}
-
-.reset {
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 23px;
-}
-
-legend {
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 30px;
-  line-height: 39px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.mode-tile {
-background-image: url("images/tile.svg");
-}
-
-.mode-slideshow {
-  background-image: url("images/slideshow.svg");
-}
-
-.mode-list {
-  background-image: url("images/list.svg");
-}
-
-select {
-  font-size: 18px;
-  line-height: 23px;
 }
 
 .catalog-list h3 {
@@ -234,7 +228,7 @@ select {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #756257;;
+  background-color: #756257;
 }
 
 .favourite {
@@ -247,6 +241,7 @@ select {
   background-color: #83B3D3;
 }
 
+/*Каталог*/
 .star-amara {
 background-image: url("images/rate-4.png");
 }
@@ -276,7 +271,7 @@ background-image: url("images/rate-2.png");;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #83B3D3;;
+  background-color: #83B3D3;
 }
 
 .page-current {
@@ -303,8 +298,3 @@ background-image: url("images/rate-2.png");;
   color: #333333;
 }
 
-select {
-  font-size: 18px;
-  line-height: 23px;
-  color: #333333;
-}
