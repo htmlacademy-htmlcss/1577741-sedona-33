@@ -236,6 +236,13 @@ nav li {
   text-align: center;
 }
 
+/*Каталог*/
+.catalog {
+  display: block;
+  justify-content: space-between;
+}
+
+
 /*Поиск*/
 .search {
   font-size: 20px;
