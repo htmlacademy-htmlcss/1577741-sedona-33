@@ -6,31 +6,27 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-
     <div class="container">
       <header class="main-header">
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.svg" width="139" height="70" alt="логотип города Sedona"></a>
-        </div>
           <nav class="navigation">
+            <a href="index.html" class="logo"><img src="images/logo.svg" width="139" height="70" alt="логотип города Sedona"></a>
              <ul class="navigation-list">
                  <li>
                      <a href="index.html" class="main">Главная</a>
                  </li>
                  <li class="navigation-link">
-                     <a href="#">О Седоне</a>
+                     <a href="#" class="sedona">О Седоне</a>
                  </li>
                  <li>
                      <a href="catalog.html">Гостиницы</a>
                  </li>
              </ul>
-
-      <ul class="navigation-navigation-user">
+      <ul class="navigation-user">
           <li>
-            <a class="visually-hidden" href="#" alt="Поиск"></a>
+            <a href="#" alt="Поиск" class="user-search"></a>
           </li>
           <li>
-            <a class="visually-hidden" href="#" alt="Избранное"></a>
+            <a href="#" alt="Избранное" class="user-favourite"></a>
           </li>
             <button class="button" type="button">Хочу сюда!</button>
         </ul>
@@ -45,6 +41,7 @@
         <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
 
+<div class="description-container">
         <div class="cityDescription">
           <div class="description-text">
             <h2 class="subtitle">Настоящий<br>городок</h2>
@@ -58,18 +55,24 @@
       <div class="city-features">
                         <div class="block-home">
                             <div class="icon feature-home"></div>
+                            <div class="city-text">
                             <h2 class="subtitle">Жилье</h2>
-                            <p>Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+                            <p class="text">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+                          </div>
                         </div>
                         <div class="block-food">
                             <div class="icon feature-food"></div>
+                            <div class="city-text">
                             <h2 class="subtitle">Еда</h2>
-                            <p>Всегда заказывайте<br> фирменный бургер,<br> вы не разочаруетесь!</p>
+                            <p class="text">Всегда заказывайте<br> фирменный бургер,<br> вы не разочаруетесь!</p>
+                          </div>
                         </div>
                         <div class="block-souvenir">
                             <div class="icon feature-souvenir"></div>
+                            <div class="city-text">
                             <h2 class="subtitle">Сувениры</h2>
-                            <p>Не только китайского,<br> но и местного<br> производства!</p>
+                            <p class="text">Не только китайского,<br> но и местного<br> производства!</p>
+                          </div>
                         </div>
                     </div>
 
@@ -78,7 +81,7 @@
       <div class="devilBridge-description">
           <h2 class="subtitle">Там есть<br>Мост Дьявола</h2>
           <span class="number">-№2-</span>
-          <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+          <p class="text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
       </div>
   </div>
   <img src="images/devilBridge.jpg" width="800" height="384" alt="Мост Дьявола">
@@ -88,38 +91,40 @@
                            <div class="trip-text">
                              <h2 class="subtitle">Небольшая<br>площадь</h2>
                              <span class="number"->-№3-</span>
-                             <p>Все достопримечательности<br> находятся очень близко</p>
+                             <p class="text">Все достопримечательности<br> находятся очень близко</p>
                          </div>
                        </div>
                          <div class="block-road">
                            <div class="road-text">
                              <h2 class="subtitle">Красивая<br>дорога</h2>
                              <span class="number">-№4-</span>
-                             <p>Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+                             <p class="text">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
                          </div>
                        </div>
                          <div class="block-tourists">
                            <div class="tourists-text">
                              <h2 class="subtitle">Мало<br>туристов</h2>
                              <span class="number">-№5-</span>
-                             <p>Большинство едет в Гранд<br> Каньон и толпится там</p>
+                             <p class="text">Большинство едет в Гранд<br> Каньон и толпится там</p>
                          </div>
                        </div>
                      </div>
+                   </div>
 
-  <div class="dates">Заинтересовались?</div>
-  <p class="tourDates">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+<div class="interest">
   <div class="search-hotels">
     <div class="hotels-title">
+  <div class="dates">Заинтересовались?</div>
+  <p class="tourDates">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 <button class="hotel-search" type="button">Поиск гостиницы в седоне</button>
 </div>
 </div>
 </div>
 
 <div class="email">
-<section class="send-form">
+<section class="index-send-form">
 <h3 class="subscription">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-<p class="no-spam">Только полезная информация и никакого спама, честное бойскаутское!</p>
+<p class="no-spam">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
 <section class="email-form">
 <form id="send-email" action="https://echo.htmlacademy.ru/" method="post">
   <label for="form-send-email">Ваш e-mail</label>
@@ -132,22 +137,21 @@
 </main>
 
 
-<div class="social">
 <footer class="footer">
     <ul class="social-list">
       <li class="social-list-item">
           <a href="https://twitter.com/htmlacademy_ru"><img src="images/twitter.svg" width="18" height="15" alt="Twitter"></a>
       </li>
       <li class="social-list-item">
-          <a href="https://www.facebook.com/htmlacademy"><img src="images/facebook.svg" width="10" height="18" alt="Facebook"></a>
+          <a href="https://www.facebook.com/htmlacademy" class="facebook"><img src="images/facebook.svg" width="10" height="18" alt="Facebook"></a>
       </li>
       <li class="social-list-item">
           <a href="https://www.youtube.com/c/HTMLAcademyRUS"><img src="images/youtube.svg" width="20,1" height="16" alt="Youtube"></a>
       </li>
-  </ul>
-  <div class="tel">
-  <a href="tel:+7(812)812-12-12">+7(812)812-12-12</a>
-  </div>
+    </ul>
+  <div class="number-tel">
+  <a href="tel:+7(812)812-12-12" class="tel">+7(812)812-12-12</a>
+</div>
     <a href="https://htmlacademy.ru" class="html-logo"><img src="images/logoHtml.svg" width="115" height="33" alt="логотип htmlacademy"></a>
 </footer>
 </div>
