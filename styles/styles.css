@@ -84,15 +84,10 @@ body {
   text-decoration: underline;
 }
 
-.logo {
-  padding-left: 70px;
-}
-
 .navigation li {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  list-style-type: none;
 }
 
 .navigation-list {
@@ -105,6 +100,7 @@ body {
   padding-top: 20px;
   padding-left: 17px;
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 .sedona {
@@ -113,27 +109,44 @@ body {
 }
 
 .navigation-user {
-  width: 264px;
   height: 66px;
   margin-top: 9px;
+  list-style-type: none;
+  margin-left: auto;
 }
+
 
 .navigation {
   width: 1060px;
   height: 70px;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.main-header {
+.style {
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: auto;
-  background-color: #ffffff;
-  left: 40px;
-  top: 0;
-  width: 1200px;
-  height: 485px;
+  margin: 0;
 }
+
+.welcome-pic {
+  background-image: url("../images/welcome.png");
+  background-repeat: no-repeat;
+  width: 458px;
+  height: 352px;
+  margin-left: 371px;
+  margin-top: 52px;
+}
+
+.welcome-line {
+  background-image: url("../images/welcomeWhiteLine.png");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 57px;
+}
+
 
 .button {
   width: 160px;
@@ -145,11 +158,11 @@ body {
 
 /*Заголовок*/
 .promo {
-  position: absolute;
   width: 1200px;
-  height: 282px;
-  top: 460px;
   background-color: #ffffff;
+  padding-top: 63px;
+  padding-bottom: 80px;
+  text-align: center;
 }
 
 
@@ -157,15 +170,12 @@ body {
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
-  padding-top: 63px;
 }
 
 .promo .reasons {
   font-size: 22px;
   line-height: 36px;
-  text-align: center;
   text-transform: none;
   padding-top: 31px;
 }
@@ -177,13 +187,10 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 1200px;
-  height: 1535px;
-  margin-top: 347px;
 }
 
 .cityDescription {
   width: 400px;
-  height: 384px;
   color: #ffffff;
   background: #83B3D3;
   text-align: center;
@@ -233,7 +240,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 23px;
 }
 
 .block {
@@ -249,7 +256,6 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   float: left;
   width: 400px;
-  height: 384px;
   margin-right: 0;
 }
 
@@ -257,36 +263,36 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
   float: left;
   width: 400px;
-  height: 384px;
 }
 
 .block-souvenir {
   background-color: rgba(131, 179, 211, 0.12);
   float: left;
   width: 400px;
-  height: 384px;
   margin-right: 0;
 }
 
 .city-text {
   text-align: center;
-  padding-top: 23px;
+  padding-bottom: 79px;
 }
 
 .feature-home {
   width: 100%;
-  height: 76px;
-  background-size: 75px 75px;
+  height: 75px;
+  background-size: 75px 72px;
   background-image: url("../images/house.png");
   background-repeat: no-repeat;
-  margin-left: 162px;
-  margin-top: 91px;
+  align-items: center;
+  margin-top: 89px;
+  margin-left: 163px;
+  margin-bottom: 20px;
 }
 
 .feature-food {
   width: 100%;
   height: 76px;
-  background-size: 75px 75px;
+  background-size: 75px 72px;
   background-image: url("../images/food.png");
   background-repeat: no-repeat;
   margin-left: 162px;
@@ -296,7 +302,7 @@ body {
 .feature-souvenir {
   width: 100%;
   height: 76px;
-  background-size: 75px 75px;
+  background-size: 75px 72px;
   background-image: url("../images/souvenir.png");
   background-repeat: no-repeat;
   margin-left: 162px;
@@ -304,13 +310,13 @@ body {
 }
 
 .number {
-  padding: 130px 120px 0;
+  padding-top: 29px;
+  text-align: center;
 }
 
 /*Мост дьявола*/
 .devilBridge {
   width: 400px;
-  height: 384px;
   color: #ffffff;
   background: #83B3D3;
   text-align: center;
@@ -319,8 +325,9 @@ body {
 
 .devilBridge-description {
   width: 290px;
-  padding-top: 97px;
+  padding-top: 98px;
   padding-left: 45px;
+  padding-bottom: 87px;
   color: #fff;
   text-align: center;
 }
@@ -333,36 +340,28 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  padding-top: 12px;
-}
-
-.trip-features p {
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  padding-top: 12px;
+  padding-top: 98px;
 }
 
 .trip-text {
-  width: 290px;
-  padding: 35px 55px 0;
+  margin-bottom: 108px;
+  text-align: center;
 }
 
 .road-text {
-  width: 290px;
-  padding: 35px 55px 0;
+  margin-bottom: 108px;
+  text-align: center;
 }
 
 .tourists-text {
-  width: 290px;
-  padding: 35px 55px 0;
+  margin-bottom: 108px;
+  text-align: center;
 }
 
 .block-square {
   background-color: rgba(131, 179, 211, 0.12);
   float: left;
   width: 400px;
-  height: 384px;
   margin: 0;
 }
 
@@ -370,21 +369,18 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
   float: left;
   width: 400px;
-  height: 384px;
 }
 
 .block-tourists {
   background-color: rgba(131, 179, 211, 0.1);
   float: left;
   width: 400px;
-  height: 384px;
   margin-right: 0;
 }
 
 /*Даты поездки*/
 .interest {
   width: 1200px;
-  height: 417px;
 }
 
 .dates {
@@ -402,8 +398,8 @@ body {
   line-height: 26px;
   color: #333333;
   text-align: center;
-  margin-top: 35px;
-  margin-bottom: 50px;
+  padding-top: 29px;
+  padding-bottom: 56px;
   text-transform: none;
 }
 
@@ -416,6 +412,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  margin-bottom: 93px;
 }
 
 /*Рассылка*/
@@ -424,14 +421,21 @@ body {
   display: flex;
   flex-direction: row;
   width: 1200px;
-  height: 411px;
+}
+
+.email-form {
+  width: 800px;
+  height: 60px;
+  background-color: #f2f2f2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
 }
 
 .index-send-form {
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   width: 1200px;
-  height: 411px;
 }
 
 .subscription {
@@ -441,24 +445,19 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 60px;
+  padding-top: 94px;
+  margin: 0;
 }
 
-.no-spam {
+.index-send-form .no-spam {
   font-size: 22px;
   line-height: 26px;
-  color: #ffffff;
   text-align: center;
   text-transform: none;
-}
-
-.email-form {
-  position: absolute;
-  width: 600px;
-  height: 60px;
-  background: #F2F2F2;
-  margin-left: 200px;
-  margin-bottom: 94px;
+  padding-top: 29px;
+  padding-bottom: 46px;
+  color: #ffffff;
+  margin: 0;
 }
 
 .type-form {
@@ -466,6 +465,7 @@ body {
   line-height: 26px;
   color: #000000;
   opacity: 0.6;
+  border: none;
 }
 
 .submit {
@@ -474,21 +474,26 @@ body {
   background-color: #81b3d2;
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: 700;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
-  margin-left: 600px;
+  border: none;
+  padding: 0;
+  margin-left: 370px;;
 }
+
 
 /*Подвал*/
 .footer {
   display: flex;
   width: 1200px;
-  position: absolute;
-  height: 120px;
   background-color: #ffffff;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
 .footer li {
@@ -496,12 +501,11 @@ body {
 }
 
 .social-list {
-  width: 107px;
-  height: 18px;
   display: flex;
   justify-content: space-between;
-  margin-top: 49px;
+  padding-left: 0;
   margin-left: 72px;
+  margin-right: 72px;
 }
 
 .facebook {
@@ -509,32 +513,19 @@ body {
   padding-right: 30px;
 }
 
-.number-tel {
-  width: 720px;
-  height: 50px;
-  margin-top: 40px;
-  margin-left: 240px;
-}
-
 .tel {
+  width: 640px;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-decoration: none;
   text-align: center;
-  margin-right: 200px;
 }
 
 .html-logo {
   width: 115px;
   height: 33px;
-  margin-top: 42px;
-  margin-right: 72px;
 }
-
-
-
-
 
 /*Каталог*/
 
@@ -543,21 +534,10 @@ body {
   width: 1200px;
 }
 
-.catalog-navigation {
-  width: 1060px;
-  height: 70px;
-  display: flex;
-}
-
-.catalog-navigation li {
-  list-style-type: none;
-}
-
 /*Фильтры*/
 
 .catalog-filters {
   width: 1200px;
-  height: 408px;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
@@ -583,23 +563,30 @@ body {
   line-height: 78px;
   padding-top: 35px;
   padding-left: 71px;
+  padding-right: 601px;
+  margin: 0;
+  text-transform: none;
 }
 
 .filter-structure {
   display: flex;
   flex-direction: column;
+  border: none;
+  margin-bottom: 83px;
 }
 
 .filter-house {
   display: flex;
   flex-direction: column;
   padding-left: 67px;
+  border: none;
 }
 
 .filter-price {
   display: flex;
-  flex-direction: column;
   padding-left: 216px;
+  border: none;
+  align-items: flex-start;
 }
 
 .filters-form {
@@ -607,6 +594,8 @@ body {
   flex-direction: row;
   margin-top: 71px;
   margin-left: 71px;
+  margin-right: 71px;
+  border: none;
 }
 
 .submit-button {
@@ -629,6 +618,7 @@ body {
   background-color: inherit;
   margin-bottom: 83px;
   margin-right: 72px;
+  border: none;
 }
 
 /*Модули*/
@@ -636,16 +626,34 @@ body {
 .sorting-container {
   display: flex;
   width: 1057px;
-  height: 48px;
+  text-align: center;
+  margin-left: 71px;
+  margin-right: 72px;
+}
+
+.catalog .subtitle {
+  color: #000000;
+  width: 100%;
+  text-align: left;
+}
+
+.text {
+  display: flex;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 21px;
+  width: 50%;
+  text-align: left;
 }
 
 .catalog-title {
   font-weight: bold;
   font-size: 30px;
   line-height: 39px;
+  padding-right: 192px;
+  padding-top: 50px;
   text-transform: uppercase;
-  color: #000000;
-  padding-left: 71px;
+  margin: 0;
 }
 
 .hotel-choice {
@@ -657,8 +665,7 @@ body {
   border: 2px solid #E6E6E6;
   box-sizing: border-box;
   border-radius: 4px;
-  margin-left: 192px;
-  margin-top: 20px;
+  margin-top: 44px;
 }
 
 .catalog .subtitle {
@@ -668,39 +675,52 @@ body {
 .catalog-list {
   display: flex;
   flex-direction: row;
-  width: 1072px;
-  height: 1060px;
   flex-wrap: wrap;
+  padding: 0;
+  padding-top: 53px;
+  padding-right: 72px;
+  padding-left: 72px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.catalog-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 18px;
+  width: 100%;
 }
 
 .catalog-list-amara {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  margin-right: 18px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .catalog-list-desert {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-left: 18px;
+  margin-right: 18px;
 }
 
 .catalog-list-diablo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  margin-left: 18px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .catalog-list-tree {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-top: 10px;
 }
 
 .load-button {
@@ -715,65 +735,94 @@ body {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  margin-left: 290px;
+  margin-bottom: 60px;
+  margin-top: 64px;
 }
+
+
+/*Пагинация*/
 
 .page-list {
   display: flex;
   width: 1056px;
-  height: 55px;
   margin-left: 72px;
+  margin-right: 299px;
+  margin-top: 68px;
+  margin-bottom: 65px;
+  align-items: center;
 }
 
 .page {
   display: flex;
   list-style-type: none;
+  padding: 0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.page-item {
+  width: 55px;
+  height: 55px;
 }
 
 .choice {
   width: 160px;
   height: 48px;
   margin-left: 51px;
-  margin-top: 32px;
 }
 
 .text-quantity {
   font-size: 18px;
   line-height: 23px;
-  margin-top: 45px;
-  margin-left: 301px;
-  margin-right: 51px;
+  width: 175px;
+  color: #333333;
+  text-transform: none;
+  margin-left: 299px;
 }
 
-.page-current-first {
+.page-item-first {
   width: 55px;
   height: 55px;
-  margin-left: 72px;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   display: flex;
-  align-items: center;
   text-align: center;
+  align-items: center;
   text-transform: uppercase;
   color: #000000;
+  background: #F2F2F2;
+  border-radius: 4px;
+  margin-right: 7px;
 }
 
 .page-item {
   width: 55px;
   height: 55px;
-  background: #83B3D3;
+  background-color: #83B3D3;
   border-radius: 4px;
   color: #ffffff;
   margin: 7px;
 }
 
+
 /*Рассылка*/
 
-.send-form {
-  width: 800px;
-  height: 241px;
-  margin-left: 200px;
+.email-catalog {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+}
+
+.index-send-form-catalog {
+  background-color: #ffffff;
+  width: 1200px;
 }
 
 .subscription-catalog {
@@ -782,13 +831,17 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 73px;
+  color: #000000;
+  margin: 0;
 }
 
-.no-spam {
+.no-spam-catalog {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  text-transform: none;
+  padding-top: 29px;
+  padding-bottom: 46px;
   color: #000000;
-  margin-top: 46px;
+  margin: 0;
 }
