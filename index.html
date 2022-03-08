@@ -23,10 +23,14 @@
              </ul>
       <ul class="navigation-user">
           <li>
-            <a href="#" alt="Поиск" class="user-search"></a>
+            <a class="navigation-link-search" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
           <li>
-            <a href="#" alt="Избранное" class="user-favourite"></a>
+            <a class="navigation-link-favorite" href="#">
+              <span class="visually-hidden">Избранное</span>
+            </a>
           </li>
             <button class="button" type="button">Хочу сюда!</button>
         </ul>
@@ -50,10 +54,10 @@
           <div class="description-text">
             <h2 class="subtitle">Настоящий<br>городок</h2>
             <span class="number">-№1-</span>
-            <p class="text">Седона-не аттракцион<br> для туристов, там течет<br> своя жизнь</p>
+            <p class="text-sedona">Седона-не аттракцион<br> для туристов, там течет<br> своя жизнь</p>
         </div>
       </div>
-      <img src="images/city.jpg" width="800" height="384" alt="картинка города">
+      <img src="images/city.jpg" width="800" alt="картинка города">
 
 
       <div class="city-features">
@@ -85,10 +89,10 @@
       <div class="devilBridge-description">
           <h2 class="subtitle">Там есть<br>Мост Дьявола</h2>
           <span class="number">-№2-</span>
-          <p class="text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+          <p class="text-sedona">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
       </div>
   </div>
-  <img src="images/devilBridge.jpg" width="800" height="384" alt="Мост Дьявола">
+  <img src="images/devilBridge.jpg" width="800" alt="картинка моста дьявола">
 
   <div class="trip-features">
                          <div class="block-square">
@@ -120,7 +124,34 @@
     <div class="hotels-title">
   <div class="dates">Заинтересовались?</div>
   <p class="tourDates">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-<button class="hotel-search" type="button">Поиск гостиницы в седоне</button>
+  <div class="search-hotels">
+                      <div class="search-hotels-title">
+                         <button type="button" class="hotel-search">Поиск гостиницы в Седоне</button>
+                     </div>
+                     <div class="modal-window">
+                         <form action="#" method="post">
+
+                                 <label for="checkin">Дата заезда:</label>
+                                 <input type="date" name="checkin" id="checked" value="24 Апреля 2016">
+
+
+                                 <label for="checkout">Дата выезда:</label>
+                                 <input type="date" name="checkout" id="checked-out" value="4 июля 2016">
+
+
+                                 <label for="grown-ups">Взрослые:</label>
+                                 <input type="number" name="grown-ups" min="1" id="adult" value="2">
+                                 <label for="children">Дети:</label>
+                                 <input type="number" name="child" id="children" value="0">
+
+
+                                 <input class="search-btn btn" type="submit" id="search-button" name="search-btn" value="Найти">
+
+                         </form>
+                     </div>
+                 </div>
+
+</div>
 </div>
 </div>
 </div>
@@ -129,13 +160,11 @@
 <section class="index-send-form">
 <h3 class="subscription">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
 <p class="no-spam">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-<section class="email-form">
 <form id="send-email" class="send-email" action="https://echo.htmlacademy.ru/" method="post">
   <label for="form-send-email" class="visually-hidden">Ваш e-mail</label>
         <input type="text" name="form-send-email" id="form-send-email" placeholder="Ваш e-mail" class="type-form">
           <button class="submit" type="button">Подписаться</button>
     </form>
-    </section>
 </section>
 </div>
 </main>
