@@ -20,19 +20,23 @@
                      <a href="#" class="sedona">О Седоне</a>
                  </li>
                  <li>
-                     <a href="catalog.html" class="catalog-checked">Гостиницы</a>
+                     <a href="catalog.html" class="main">Гостиницы</a>
                  </li>
              </ul>
 
-      <ul class="navigation-user">
-          <li>
-            <a class="visually-hidden" href="#" alt="Поиск"></a>
-          </li>
-          <li>
-            <a class="visually-hidden" href="#" alt="Избранное"></a>
-          </li>
-            <button class="button" type="button">Хочу сюда!</button>
-        </ul>
+             <ul class="navigation-user">
+                 <li>
+                   <a class="navigation-link-search" href="#">
+                     <span class="visually-hidden">Поиск</span>
+                   </a>
+                 </li>
+                 <li>
+                   <a class="navigation-link-favorite" href="#">
+                     <span class="visually-hidden">Избранное</span>
+                   </a>
+                 </li>
+                   <button class="button" type="button">Хочу сюда!</button>
+               </ul>
       </nav>
     </header>
 
@@ -86,9 +90,9 @@
   <option>Сначала дорогие</option>
 </select>
 <div class="modes a">
-<a href="#" img src="../images/mode-tile.svg" class="mode-tile"></a>
-<a href="#" img src="../images/mode-slideshow.svg" class="mode-slideshow"></a>
-<a href="#" img src="../images/mode-list.svg" class="mode-list"></a>
+<a href="#" class="mode-tile"></a>
+<a href="#" class="mode-slideshow"></a>
+<a href="#" class="mode-list"></a>
 </div>
 </div>
 
@@ -99,8 +103,8 @@
     <img src="images/amaraHotel.jpg" width="300" height="206" alt="Отель Amara Resort & Spa">
     <div class="list">
     <h3 class="subtitle">Amara Resort & Spa</h3>
-    <p class="text">Гостиница</p>
-    <p class="text">От 4000 ₽</p>
+    <p class="text-catalog">Гостиница</p>
+    <p class="text-catalog">От 4000 ₽</p>
   </div>
     <button class="more" type="button">Подробнее</button>
       <button class="favourite" type="button">В Избранное</button>
@@ -112,8 +116,8 @@
     <img src="images/desertHotel.jpg" width="300" height="206" alt="Отель Desert Quail Inn">
     <div class="list">
     <h3 class="subtitle">Desert Quail Inn</h3>
-    <p class="text">Гостиница</p>
-    <p class="text">От 3000 ₽</p>
+    <p class="text-catalog">Гостиница</p>
+    <p class="text-catalog">От 3000 ₽</p>
   </div>
     <button class="more" type="button">Подробнее</button>
       <button class="favourite" type="button">В Избранное</button>
@@ -126,8 +130,8 @@
     <img src="images/villasDiablo.jpg" width="300" height="206""  alt="Отель Villas at Poco Diablo">
     <div class="list">
     <h3 class="subtitle">Villas at Poco Diablo</h3>
-    <p class="text">Гостиница</p>
-    <p class="text">От 2000 ₽</p>
+    <p class="text-catalog">Гостиница</p>
+    <p class="text-catalog">От 2000 ₽</p>
   </div>
     <button class="more" type="button">Подробнее</button>
       <button class="favourite" type="button">В Избранное</button>
@@ -138,8 +142,8 @@
     <img src="images/greenTree.jpg" width="300" height="206"  alt="Отель GreenTree Inn">
     <div class="list">
     <h3 class="subtitle">GreenTree Inn</h3>
-    <p class="text">Гостиница</p>
-    <p class="text">От 3000 ₽</p>
+    <p class="text-catalog">Гостиница</p>
+    <p class="text-catalog">От 3000 ₽</p>
   </div>
     <button class="more" type="button">Подробнее</button>
       <button class="favourite" type="button">В Избранное</button>
@@ -150,14 +154,14 @@
 </div>
   <button class="load-button" type="button">Загрузить еще</button>
 </div>
-  <div class="page-list">
-    <ul class="page">
-     <li class="page-item-first">1</li>
-     <li class="page-item"><a href="#" title="На страницу номер 2">2</a></li>
-     <li class="page-item"><a href="#" title="На страницу номер 3">3</a></li>
-     <li class="page-item"><a href="#" title="На страницу номер 4">4</a></li>
-     <li class="page-item"><a href="#" title="...">›</a></li>
-     <li class="page-item"><a href="#" title="На страницу номер 10">›</a></li>
+  <div class="pagination-container">
+    <ul class="pagination">
+     <li class="pagination-item">1</li>
+     <li class="pagination-item"><a href="#" class="page-number" title="На страницу номер 2">2</a></li>
+     <li class="pagination-item"><a href="#" class="page-number" title="На страницу номер 3">3</a></li>
+     <li class="pagination-item"><a href="#" class="page-number" title="На страницу номер 4">4</a></li>
+     <li class="pagination-item"><a href="#" class="page-number" title="...">...</a></li>
+     <li class="pagination-item"><a href="#" class="page-number" title="На страницу номер 10">10</a></li>
     </ul>
    <p class="text-quantity">Гостиниц на странице:</p>
    <select class="choice">
