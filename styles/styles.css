@@ -137,12 +137,26 @@ body {
   width: 18px;
   height: 17px;
   position: relative;
+  margin-right: 33px;
+  margin-left: 24px;
 }
 
 .favorite-number {
   position: absolute;
   top: -22px;
-  right: -20px;
+  background: #7DB54F;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding-top: 2.5px;
+  margin-left: 13px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 
@@ -186,6 +200,7 @@ body {
   background-color: #756257;
   color: #ffffff;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 /*Заголовок*/
@@ -235,11 +250,12 @@ body {
 
 .description-text {
   width: 290px;
-  padding-top: 97px;
-  padding-left: 45px;
+  padding-top: 98px;
+  padding-left: 90px;
+  padding-bottom: 87px;
+  margin: 0;
   color: #fff;
   text-align: center;
-  margin-left: 0;
 }
 
 .text {
@@ -284,6 +300,7 @@ body {
   list-style: none;
   color: #333333;
   background-color: #fff;
+  align-items: center;
 }
 
 .city-features .subtitle {
@@ -370,8 +387,7 @@ body {
 .devilBridge-description {
   width: 290px;
   padding-top: 98px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 90px;
   padding-bottom: 87px;
   margin: 0;
   color: #fff;
@@ -458,6 +474,7 @@ body {
   width: 575px;
   height: 60px;
   background-color: #756257;
+  border-radius: 10px;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
@@ -520,6 +537,7 @@ body {
   border: none;
   margin: 0;
   padding: 0 22px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .submit {
@@ -537,6 +555,7 @@ body {
   padding-right: 0;
   padding-top: 0;
   padding-bottom: 0;
+  border-radius: 0px 10px 10px 0px;
 }
 
 
@@ -662,6 +681,14 @@ a[href^="tel:"] {
   padding-left: 0;
   width: 100%;
   text-align: left;
+}
+
+.price-form {
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 287px;
+  height: 48px;
 }
 
 .filters-form {
@@ -982,4 +1009,278 @@ a[href^="tel:"] {
   padding-bottom: 46px;
   color: #000000;
   margin: 0;
+}
+
+/*hover*/
+
+.navigation-list .main:hover {
+  color: #756257;
+}
+
+.navigation-link-search svg:hover {
+  fill: #756257;
+}
+
+.navigation-link-search svg {
+  fill: #000000;
+}
+
+.navigation-link-favorite svg:hover {
+  fill: #756257;
+}
+
+.navigation-link-favorite svg {
+  fill: #000000;
+}
+
+.button:hover {
+  background: #615048;
+}
+
+.hotel-search:hover {
+  background: #615048;
+}
+
+.submit:hover {
+  background: #68A2CA;
+}
+
+.type-form:hover {
+  background: #E6E6E6;
+}
+
+.tel:hover {
+  color: #756257;
+}
+
+.html-logo svg {
+  fill: #000000;
+}
+
+.html-logo svg:hover {
+  fill:#756257;
+}
+
+/*Фокус*/
+
+.button:focus {
+  background: #615048;
+  border: 3px solid #83B3D3;
+}
+
+.hotel-search:focus {
+  background: #615048;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.type-form:focus {
+  border: 3px solid #83B3D3;
+}
+
+.submit:focus {
+  background: #68A2CA;
+  border: 3px solid #756257;
+}
+
+.tel:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.html-logo:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+}
+
+/*Ошибка*/
+.type-form:default {
+  border: 2px solid #FF5757;
+  box-sizing: border-box;
+}
+
+/*Нажатие*/
+
+.navigation-list .main:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
+.navigation-link-search:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
+.navigation-link-favorite:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
+.button:active {
+  background: #615048;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-search:active {
+  background: #615048;
+  border-radius: 10px;
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.submit:active {
+  background: #68A2CA;
+  color: #FFFFFF;
+  opacity: 0.3;
+  border: 0;
+}
+
+.tel:active {
+  color: #756257;
+  opacity: 0.3;
+  border: 0;
+}
+
+.html-logo svg:active {
+  opacity: 0.3;
+}
+
+/*Модальное окно*/
+
+.modal-window {
+  position: absolute;
+  width:715px;
+  height: 561px;
+  background-color: #ffffff;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  display: flex;
+  top: 396px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 70px;
+  padding-top: 63px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.modal-window-header {
+  padding-bottom: 51px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-left: 0;
+  margin: 0;
+  float: left;
+}
+
+.modal-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  display: flex;
+  text-transform: none;
+  text-align: left;
+  width: 155px;
+}
+
+.search-btn {
+  width: 575px;
+  height: 60px;
+  background: #83B3D3;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  border: 0;
+  padding-left: 260px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.number-people {
+  width: 133px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  border: 0;
+  padding: 0;
+  margin-right: 58px;
+}
+
+
+.quantity {
+  display: flex;
+}
+
+.grown-ups-number {
+  display: flex;
+  width: 288px;
+  height: 50px;
+  margin-right: 56px;
+  float: right;
+}
+
+.kids-number {
+  display: flex;
+  width: 288px;
+  height: 50px;
+  float: left;
+}
+
+.dates-arrival {
+  display: flex;
+  justify-content: space-between;
+  width: 575px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.dates-leaving {
+  display: flex;
+  justify-content: space-between;
+  width: 575px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.tour-dates {
+  width: 420px;
+  border: 0;
+  background: #F2F2F2;
+  border-radius: 4px;
+  padding-left: 19px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-close {
+  background-image: url("../images/modal-close.svg");
+  display: block;
+  width: 53px;
+  height: 53px;
+  border: 0;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: #F2F2F2;
+  color: #000000;
+  margin-left: 522px;
+  margin-top: -9px;
+  text-align: center;
+  padding-top: 8px;
 }
