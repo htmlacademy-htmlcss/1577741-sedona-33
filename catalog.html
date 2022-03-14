@@ -49,38 +49,62 @@
   <main>
     <section class="catalog-filters">
       <h1 class="hotel-name">Гостиницы Седоны</h1>
-      <a href="#" alt="Домой" class="link-home"></a>
-      <a href="#" alt="Гостиницы" class="link-hotels"></a>
+      <ul class="links">
+        <li class="links-item">
+          <a href="#" class="link-home"></a>
+        </li>
+        <li class="links-item">
+          <a href="#" class="link-hotels">Гостиницы</a>
+        </li>
+      </ul>
       <h2 class="visually-hidden">Фильтры</h2>
       <form id="filters-form" class="filters-form" action="#" method="get">
         <fieldset class="filter-structure">
           <legend class="infostructure">Инфраструктура:</legend>
+          <div class="structure-text">
           <label for="filters-form-area-value-1">Бассейн</label>
           <input type="checkbox" name="filters-form-area" id="filters-form-area-value-1" checked value="Бассейн">
           <label for="filters-form-area-value-2">Парковка</label>
           <input type="checkbox" name="filters-form-area" id="filters-form-area-value-2" checked value="Парковка">
           <label for="filters-form-area-value-3">Wi-Fi</label>
           <input type="checkbox" name="filters-form-area" id="filters-form-area-value-3" value="Wi-Fi">
+        </div>
         </fieldset>
 
         <fieldset class="filter-house">
           <legend class="house-type">Тип жилья:</legend>
           <label for="filters-form-equipment-value-hotel">Гостиница</label>
-          <input type="checkbox" name="filters-form-equipment" id="filters-form-equipment-value-hotel" checked value="hotel">
+          <input type="radio" name="filters-form-equipment" id="filters-form-equipment-value-hotel" checked value="hotel">
           <label for="filters-form-equipment-value-motel">Мотель</label>
-          <input type="checkbox" name="filters-form-equipment" id="filters-form-equipment-value-motel" value="motel">
+          <input type="radio" name="filters-form-equipment" id="filters-form-equipment-value-motel" value="motel">
           <label for="filters-form-equipment-value-apartment">Апартаменты</label>
-          <input type="checkbox" name="filters-form-equipment" id="filters-form-equipment-value-apartment" value="apartment">
+          <input type="radio" name="filters-form-equipment" id="filters-form-equipment-value-apartment" value="apartment">
         </fieldset>
 
         <fieldset class="filter-price">
           <legend class="price">Стоимость, <span>₽:</span></legend>
           <label for="filters-form-price-from" class="visually-hidden">Стоимость, от</label>
-          <div class="price-form">
-          <input type="text" name="filters-form-price-from" id="filters-form-price-from" placeholder="от 0" value="0">
-          <label for="filters-form-price-to" class="visually-hidden">Стоимость, до</label>
-          <input type="text" name="filters-form-price-to" id="filters-form-price-to" placeholder="до 9000" value="9000">
-        </div>
+          <div class="range">
+
+                          <div class="range-wrapper-inputs">
+                            <label class="catalog-filter-label">
+                              <input class="range-input" type="number" value="0" name="min-price">
+                            </label>
+                            <label class="catalog-filter-label">
+                              <input class="range-input" type="number" value="9000" name="max-price">
+                            </label>
+                          </div>
+                          <div class="range-scale">
+                            <div class="range-bar" style="left: 0; width: 287px">
+                              <button class="range-toggle toggle-min">
+                                <span class="visually-hidden">Изменить минимальную цену.</span>
+                              </button>
+                              <button class="range-toggle toggle-max">
+                                <span class="visually-hidden">Изменить максимальную цену.</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
         </fieldset>
         <div class="catalog-buttons">
           <button class="submit-button" type="submit">Применить</button>

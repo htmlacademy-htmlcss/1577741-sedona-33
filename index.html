@@ -138,48 +138,56 @@
     </div>
 
     <div class="email">
-      <div class="modal-window">
-        <form action="#" method="post">
-          <h3 class="modal-window-header">Поиск гостиницы в Седоне</h3>
-          <a href="#" class="modal-close" img src="#" width: 13px height: 13px>
-            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
-            </svg>
-          </a>
-
-          <div class="dates-arrival">
-          <label for="dates" class="modal-text">Дата заезда:</label>
-          <input type="date" class="tour-dates" name="checkin" id="checked" value="27 апреля 2020">
-        </div>
-
-          <div class="dates-leaving">
-          <label for="dates-out" class="modal-text">Дата выезда:</label>
-          <input type="date" class="tour-dates" name="checkout" id="checked-out" value="1 сентября 2021">
-        </div>
-
-<div class="quantity">
-          <div class="grown-ups-number">
-          <label for="grown-ups" class="modal-text">Взрослые:</label>
-          <input type="number-people" class="number-people" name="grown-ups" min="1" id="adult" value="2">
-        </div>
-
-        <div class="kids-number">
-          <label for="kids" class="modal-text">Дети:</label>
-          <input type="number-people" class="number-people" name="child" id="children" value="1">
-        </div>
-      </div>
-
-
-          <input class="search-btn btn" type="submit" id="search-button" name="search-btn" value="Найти">
-
-        </form>
-      </div>
       <h3 class="subscription">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
       <p class="no-spam">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
       <form id="send-email" class="send-email" action="https://echo.htmlacademy.ru/" method="post">
         <label for="form-send-email" class="visually-hidden">Ваш e-mail</label>
         <input type="text" name="form-send-email" id="form-send-email" placeholder="Ваш e-mail" class="type-form">
         <button class="submit" type="button">Подписаться</button>
+      </form>
+    </div>
+
+    <div class="modal-window">
+      <form action="#" method="post">
+        <h3 class="modal-window-header">Поиск гостиницы в Седоне</h3>
+        <a href="#" class="modal-close">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
+          </svg>
+        </a>
+
+        <div class="dates-arrival">
+          <label for="dates" class="modal-text">Дата заезда:</label>
+          <input type="date" class="tour-dates" name="checkin" id="date" placeholder="27 апреля 2020">
+        </div>
+
+        <div class="dates-leaving">
+          <label for="dates-out" class="modal-text">Дата выезда:</label>
+          <input type="date" class="tour-dates" name="checkout" id="date" placeholder="1 сентября 2021">
+        </div>
+
+        <div class="quantity">
+          <div class="grown-ups-number">
+            <label for="grown-ups" class="modal-text">Взрослые:</label>
+            <button class="minus" type="button">-</button>
+            <input type="number-people" class="number-people" name="grown-ups" min="1" id="grown-ups" value="2">
+            <button class="plus" type="button">+</button>
+          </div>
+
+          <div class="kids-number">
+            <label for="kids" class="modal-text">Дети:</label>
+            <button class="minus" type="button">-</button>
+            <input type="number-people" class="number-people" name="child" id="kids" value="1">
+            <button class="plus" type="button">+</button>
+          </div>
+        </div>
+
+
+        <input class="search-btn btn" type="submit" id="search-button" name="search-btn" value="Найти">
+
+        <span class="info">i</span>
+        <p class="info-text">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</p>
+
       </form>
     </div>
   </main>
