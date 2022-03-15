@@ -160,33 +160,40 @@
           <label for="dates" class="modal-text">Дата заезда:</label>
           <input type="date" class="tour-dates" name="checkin" id="date" placeholder="27 апреля 2020">
         </div>
+        <p class="dates-text">Мы не можем отправить вас в прошлое.</p>
 
         <div class="dates-leaving">
           <label for="dates-out" class="modal-text">Дата выезда:</label>
           <input type="date" class="tour-dates" name="checkout" id="date" placeholder="1 сентября 2021">
         </div>
+        <p class="leaving-text">На эти даты есть свободные номера. Пока есть.</p>
 
         <div class="quantity">
           <div class="grown-ups-number">
             <label for="grown-ups" class="modal-text">Взрослые:</label>
+            <div class="recount">
             <button class="minus" type="button">-</button>
             <input type="number-people" class="number-people" name="grown-ups" min="1" id="grown-ups" value="2">
             <button class="plus" type="button">+</button>
           </div>
+          </div>
 
           <div class="kids-number">
             <label for="kids" class="modal-text">Дети:</label>
+            <div class="recount">
             <button class="minus" type="button">-</button>
             <input type="number-people" class="number-people" name="child" id="kids" value="1">
             <button class="plus" type="button">+</button>
           </div>
+          </div>
         </div>
+        <div class="modal-info">
+        <span class="info">i</span>
+        <p class="info-text">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</p>
+      </div>
 
 
         <input class="search-btn btn" type="submit" id="search-button" name="search-btn" value="Найти">
-
-        <span class="info">i</span>
-        <p class="info-text">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</p>
 
       </form>
     </div>

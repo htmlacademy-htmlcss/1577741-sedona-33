@@ -459,6 +459,18 @@ body {
   margin: 0;
 }
 
+.dates-text {
+  color: #FF5757;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: left;
+  padding-left: 155px;
+  padding-top: 0;
+  margin: 0;
+  text-transform: none;
+}
+
 .tourDates {
   font-size: 20px;
   line-height: 26px;
@@ -480,6 +492,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  margin-top: 56px;
   padding: 0;
   margin: 0;
   border: 0;
@@ -669,66 +682,57 @@ a[href^="tel:"] {
   text-transform: none;
 }
 
-.filter-structure {
-  display: flex;
-  flex-direction: column;
-  border: none;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  text-transform: none;
-  float: left;
-}
-
-.infostructure {
+/* Title */
+.catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  color: #FFFFFF;
   text-transform: none;
   padding-bottom: 30px;
 }
 
-.radio-button {
-  width: 20px;
-  height: 20px;
-}
-
-.structure-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.filter-house {
-  display: flex;
-  flex-direction: column;
-  padding-left: 67px;
-  border: none;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 67px;
+/* Label */
+.structure {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  color: #FFFFFF;
   text-transform: none;
-  float: left;
 }
 
-.house-type {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-transform: none;
-  padding-bottom: 30px;
+.catalog-filter-group {
+  display: flex;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 67px;
+  text-align: left;
 }
 
+.catalog-filter-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  width: 150px;
+  margin: 0;
+  padding-bottom: 84px;
+}
+
+.catalog-filter-item {
+  padding-bottom: 13px;
+}
+
+.catalog-filter-item:last-of-type {
+  padding-bottom: 0;
+}
 
 
 .filter-price {
   display: flex;
-  padding-left: 160px;
+  padding-left: 93px;
   border: none;
   align-items: flex-start;
   margin: 0;
@@ -827,7 +831,6 @@ a[href^="tel:"] {
   display: flex;
   flex-direction: row;
   padding-top: 45px;
-  padding-bottom: 87px;
   border: none;
   margin: 0;
 }
@@ -1411,12 +1414,20 @@ a[href^="tel:"] {
   text-align: center;
 }
 
+.recount {
+  display: flex;
+}
+
 .minus {
-  border: none;
+  position: absolute;
+  padding-left: 19px;
+  margin-top: 10px;
 }
 
 .plus {
-  border: none;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 110px;
 }
 
 
@@ -1447,7 +1458,6 @@ a[href^="tel:"] {
   justify-content: space-between;
   width: 575px;
   height: 50px;
-  margin-bottom: 40px;
 }
 
 .dates-leaving {
@@ -1455,7 +1465,18 @@ a[href^="tel:"] {
   justify-content: space-between;
   width: 575px;
   height: 50px;
-  margin-bottom: 40px;
+  margin-top: 11px;
+}
+
+.leaving-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #333333;
+  text-transform: none;
+  padding-left: 65px;
+  padding-bottom: 11px;
+  margin: 0;
 }
 
 .tour-dates {
@@ -1488,6 +1509,13 @@ a[href^="tel:"] {
   padding-top: 8px;
 }
 
+.info {
+  width: 25px;
+  height: 25px;
+  background: #83B3D3;
+  color: #ffffff;
+}
+
 
 .info-text {
   display: none;
@@ -1509,4 +1537,10 @@ a[href^="tel:"] {
 
 .info:hover + .info-text {
   display: block;
+}
+
+.modal-info {
+  position: absolute;
+  width: 256px;
+  align-items: center;
 }
