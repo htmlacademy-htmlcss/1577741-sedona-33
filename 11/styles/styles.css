@@ -545,8 +545,9 @@ body {
 
 .hotel-search:active {
   background: #615048;
-  border-radius: 10px;
-  color: #FFFFFF;
+}
+
+.sedona-hotel-search-text:active {
   opacity: 0.3;
 }
 
@@ -646,9 +647,12 @@ body {
 
 .submit:active {
   background: #68A2CA;
+  border: 0;
+}
+
+.submit-text:active {
   color: #FFFFFF;
   opacity: 0.3;
-  border: 0;
 }
 
 /*Подвал*/
@@ -914,7 +918,7 @@ a[href^="tel:"] {
   text-align: left;
 }
 
-.catalog-filter-list {
+.list {
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -932,7 +936,6 @@ a[href^="tel:"] {
 .catalog-filter-item:last-of-type {
   padding-bottom: 0;
 }
-
 
 .filter-price {
   display: flex;
@@ -956,8 +959,8 @@ a[href^="tel:"] {
   padding-bottom: 34px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
@@ -1013,10 +1016,22 @@ input::-webkit-inner-spin-button {
 }
 
 .range-wrapper-inputs {
+  position: relative;
   box-sizing: border-box;
   width: 287px;
   height: 48px;
   display: flex;
+}
+
+.price-class {
+  position: absolute;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+  opacity: 0.3;
+  text-transform: lowercase;
+  left: 112px;
+  top: 12px;
 }
 
 /* Range */
@@ -1109,20 +1124,24 @@ input::-webkit-inner-spin-button {
 
 .submit-button:active {
   background: #68A2CA;
+}
+
+.submit-button-text:active {
   color: #ffffff;
   opacity: 0.3;
 }
 
 .reset-button {
-  width: 160px;
   color: #ffffff;
   font-size: 18px;
   line-height: 23px;
   background-color: inherit;
   padding-top: 20px;
-  padding-bottom: 83px;
+  padding-bottom: 84px;
+  padding-left: 0;
+  padding-right: 0;
   border: none;
-  float: right;
+  text-align: center;
 }
 
 .reset-button:hover {
@@ -1132,6 +1151,7 @@ input::-webkit-inner-spin-button {
 .reset-button:focus {
   border: 3px solid #83B3D3;
   width: 100px;
+  height: 32px;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -1318,6 +1338,9 @@ img:active {
 
 .more:active {
   background: #615048;
+}
+
+.more-text:active {
   color: #FFFFFF;
   opacity: 0.3;
 }
@@ -1351,6 +1374,9 @@ img:active {
   background: #68A2CA;
   border: 1px solid #756257;
   box-sizing: border-box;
+}
+
+.favourite-text:active {
   color: #FFFFFF;
   opacity: 0.3;
 }
@@ -1639,7 +1665,7 @@ img:active {
   background: #68A2CA;
 }
 
-.search-btn-focus {
+.search-btn:focus {
   background: #68A2CA;
   border: 3px solid #756257;
 }
@@ -1648,7 +1674,7 @@ img:active {
   background: #68A2CA;
 }
 
-.search-btn-text {
+.search-btn-text:active {
   color: #ffffff;
   opacity: 0.3;
 }
