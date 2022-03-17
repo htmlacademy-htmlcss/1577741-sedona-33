@@ -774,6 +774,23 @@ a[href^="tel:"] {
   list-style-type: none;
 }
 
+.links:hover {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.links:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  opacity: 1;
+  color: #ffffff;
+}
+
+.links:active {
+  opacity: 0.3;
+}
+
 .links-item:not(:last-of-type) {
   padding-right: 26px;
   background: url("../images/breadcrumbs-arrow.svg") no-repeat right 10px center / 5px;
@@ -855,6 +872,10 @@ a[href^="tel:"] {
   background-position: center;
 }
 
+.structure-mark-checked:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
 .structure:hover .structure-mark {
   background: rgba(255, 255, 255, 0.6);
 }
@@ -920,7 +941,7 @@ a[href^="tel:"] {
   align-items: flex-start;
   margin: 0;
   padding-top: 0;
-  padding-right: 0;
+  padding-right: 81px;
   padding-bottom: 0;
 }
 
@@ -933,6 +954,11 @@ a[href^="tel:"] {
   line-height: 26px;
   text-transform: none;
   padding-bottom: 34px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .range {
@@ -958,6 +984,24 @@ a[href^="tel:"] {
   font-size: 18px;
   line-height: 23px;
   padding-left: 19px;
+}
+
+.range-input:hover {
+  opacity: 0.6;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+}
+
+.range-input:focus {
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 0px 3px #81B3D2;
+}
+
+.range-input:active {
+  background: #756257;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
 }
 
 .catalog-filter-label:first-of-type input {
@@ -1000,6 +1044,23 @@ a[href^="tel:"] {
   cursor: pointer;
 }
 
+.range-toggle:hover {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  background: #FFFFFF;
+  border: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle-active {
+  background: #FFFFFF;
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
 .toggle-min {
   top: -8px;
   left: 0px;
@@ -1018,11 +1079,14 @@ a[href^="tel:"] {
   margin: 0;
 }
 
+.catalog-buttons {
+  padding-left: 0;
+}
+
 .submit-button {
   width: 160px;
   height: 48px;
   margin-top: 60px;
-  margin-left: 81px;
   margin-right: auto;
   font-weight: bold;
   font-size: 16px;
@@ -1034,6 +1098,21 @@ a[href^="tel:"] {
   padding: 0;
 }
 
+.submit-button:hover {
+  background: #68A2CA;
+}
+
+.submit-button:focus {
+  background: #68A2CA;
+  border: 3px solid #FFFFFF;
+}
+
+.submit-button:active {
+  background: #68A2CA;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
 .reset-button {
   width: 160px;
   color: #ffffff;
@@ -1042,8 +1121,19 @@ a[href^="tel:"] {
   background-color: inherit;
   padding-top: 20px;
   padding-bottom: 83px;
-  padding-left: 81px;
   border: none;
+  float: right;
+}
+
+.reset-button:hover {
+  opacity: 0.6;
+}
+
+.reset-button:focus {
+  border: 3px solid #83B3D3;
+  width: 100px;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 /*Модули*/
@@ -1087,6 +1177,23 @@ a[href^="tel:"] {
   margin-right: 73px;
 }
 
+.hotel-choice:hover {
+  border: 2px solid #83B3D3;
+  box-sizing: border-box;
+}
+
+.hotel-choice:focus {
+  border: 2px solid #83B3D3;
+  box-sizing: border-box;
+}
+
+.hotel-choice:active {
+  border: 2px solid #E6E6E6;
+  box-sizing: border-box;
+  color: #333333;
+  opacity: 0.3;
+}
+
 .modes {
   display: flex;
 }
@@ -1100,6 +1207,21 @@ a[href^="tel:"] {
   margin-left: 8px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.modes a:hover {
+  border: 2px solid #83B3D3;
+  box-sizing: border-box;
+}
+
+.modes a:focus {
+  border: 2px solid #83B3D3;
+  box-sizing: border-box;
+}
+
+.modes a:active {
+  border: 2px solid #000000;
+  box-sizing: border-box;
 }
 
 .mode-tile {
@@ -1152,6 +1274,18 @@ a[href^="tel:"] {
   margin-top: 0;
 }
 
+img:hover {
+  opacity: 0.6;
+}
+
+img:focus {
+  border: 3px solid #83B3D3;
+}
+
+img:active {
+  opacity: 0.3;
+}
+
 .list {
   display: flex;
   flex-wrap: wrap;
@@ -1173,6 +1307,21 @@ a[href^="tel:"] {
   margin-right: 26px;
 }
 
+.more:hover {
+  background: #615048;
+  border: 3px solid #83B3D3;
+}
+
+.more:focus {
+  background: #615048;
+}
+
+.more:active {
+  background: #615048;
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
 .favourite {
   width: 140px;
   height: 37px;
@@ -1185,6 +1334,25 @@ a[href^="tel:"] {
   background: #82B3D3;
   border-radius: 4px;
   float: left;
+}
+
+.favourite:hover {
+  background: #68A2CA;
+  border: 3px solid #756257;
+}
+
+.favourite:focus {
+  background: #68A2CA;
+  border: 1px solid #756257;
+  box-sizing: border-box;
+}
+
+.favourite:active {
+  background: #68A2CA;
+  border: 1px solid #756257;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 
 .text-catalog {
@@ -1305,6 +1473,19 @@ a[href^="tel:"] {
   background-color: #83B3D3;
 }
 
+.pagination-item:not(:first-of-type):hover {
+  background: #68A2CA;
+}
+
+.pagination-item:not(:first-of-type):focus {
+  background: #68A2CA;
+  border: 3px solid #756257;
+}
+
+.pagination-item:not(:first-of-type):active {
+  background: #68A2CA;
+}
+
 .pagination-item:first-of-type {
   margin-left: 0;
   background-color: #F2F2F2;
@@ -1314,6 +1495,10 @@ a[href^="tel:"] {
   line-height: 26px;
   align-items: center;
   justify-content: center;
+}
+
+.pagination-item:first-of-type:active {
+  background: #F2F2F2;
 }
 
 .page-number {
@@ -1326,6 +1511,11 @@ a[href^="tel:"] {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.page-number:active {
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 
 .choice {
