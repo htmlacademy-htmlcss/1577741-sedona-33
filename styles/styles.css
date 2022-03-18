@@ -127,8 +127,8 @@ body {
   bottom: 0;
 }
 
-.main::after:active {
-  border: 2px solid #756257;
+.main:active::after {
+  background-color: #756257;
 }
 
 .sedona {
@@ -326,6 +326,7 @@ body {
 }
 
 .subtitle {
+  width: 100%;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
@@ -876,17 +877,26 @@ a[href^="tel:"] {
   background-position: center;
 }
 
-.structure-mark-checked:hover {
-  background: rgba(255, 255, 255, 0.6);
+.structure-input:hover + .structure-mark-checked {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.structure-input:focus + .structure-mark-checked {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid #83B3D3;
+}
+
+.structure-input:active + .structure-mark-checked {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .structure:hover .structure-mark {
-  background: rgba(255, 255, 255, 0.6);
+  opacity: 0.6;
 }
 
 .structure-input:focus + .structure-mark {
   background: rgba(255, 255, 255, 0.6);
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .structure-input:active + .structure-mark {
@@ -920,17 +930,20 @@ a[href^="tel:"] {
 
 .list {
   display: flex;
-  flex-direction: column;
   list-style-type: none;
   text-align: left;
   padding: 0;
-  width: 150px;
   margin: 0;
-  padding-bottom: 84px;
+}
+
+.catalog-filter-list {
+  padding-left: 0;
+  margin-top: 0;
 }
 
 .catalog-filter-item {
   padding-bottom: 13px;
+  list-style-type: none;
 }
 
 .catalog-filter-item:last-of-type {
@@ -970,6 +983,7 @@ a[href^="tel:"] {
 }
 
 .catalog-filter-label {
+  position: relative;
   display: flex;
   height: 48px;
   font-weight: 400;
@@ -1016,7 +1030,6 @@ a[href^="tel:"] {
 }
 
 .range-wrapper-inputs {
-  position: relative;
   box-sizing: border-box;
   width: 287px;
   height: 48px;
@@ -1090,6 +1103,7 @@ a[href^="tel:"] {
   display: flex;
   flex-direction: row;
   padding-top: 45px;
+  padding-bottom: 84px;
   border: none;
   margin: 0;
 }
@@ -1137,7 +1151,7 @@ a[href^="tel:"] {
   line-height: 23px;
   background-color: inherit;
   padding-top: 20px;
-  padding-bottom: 84px;
+  padding-bottom: 20px;
   padding-left: 0;
   padding-right: 0;
   border: none;
@@ -1151,7 +1165,6 @@ a[href^="tel:"] {
 .reset-button:focus {
   border: 3px solid #83B3D3;
   width: 100px;
-  height: 32px;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -1195,6 +1208,7 @@ a[href^="tel:"] {
   border-radius: 4px;
   margin-left: auto;
   margin-right: 73px;
+  padding-left: 19px;
 }
 
 .hotel-choice:hover {
@@ -1325,6 +1339,7 @@ img:active {
   background: #756257;
   border-radius: 4px;
   margin-right: 26px;
+  border: none;
 }
 
 .more:hover {
@@ -1357,6 +1372,7 @@ img:active {
   background: #82B3D3;
   border-radius: 4px;
   float: left;
+  border: none;
 }
 
 .favourite:hover {
@@ -1377,6 +1393,39 @@ img:active {
 }
 
 .favourite-text:active {
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.favourite-diablo {
+  color: #ffffff;
+  background: #7DB54F;
+  border-radius: 4px;
+  width: 140px;
+  height: 37px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  float: left;
+  border: none;
+}
+
+.favourite-diablo:focus {
+  background: #6C9E42;
+  border: 3px solid #756257;
+}
+
+.favourite-diablo:hover {
+  background: #6C9E42;
+}
+
+.favourite-diablo:active {
+  background: #6C9E42;
+}
+
+.favourite-text-diablo:active {
   color: #FFFFFF;
   opacity: 0.3;
 }
@@ -1548,6 +1597,7 @@ img:active {
   width: 160px;
   height: 48px;
   margin-left: 51px;
+  padding-left: 17px;
 }
 
 .text-quantity {
@@ -1598,15 +1648,21 @@ img:active {
 }
 
 /*Модальное окно*/
+.modal-background {
+  background-color: rgba(242, 242, 242, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .modal-window {
-  display: none;
-  position: fixed;
+  position: absolute;
   width:715px;
   background-color: #ffffff;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-  display: flex;
   padding-left: 70px;
   padding-right: 70px;
   padding-bottom: 70px;
@@ -1618,6 +1674,7 @@ img:active {
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 10;
+  opacity: 1;
 }
 
 .modal-window-header {
@@ -1780,6 +1837,7 @@ img:active {
 }
 
 .kids-number {
+  position:relative;
   display: flex;
   height: 50px;
   float: left;
@@ -1891,9 +1949,21 @@ img:active {
   border-radius: 50%;
 }
 
+.triangle {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #333333;
+}
 
 .info-text {
   display: none;
+  position: relative;
   width: 256px;
   background: #333333;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
@@ -1925,6 +1995,6 @@ img:active {
   align-items: center;
   right: 106px;
   bottom: 23px;
-  top: 370px;
-  left: 353px;
+  top: 14px;
+  left: 17px;
 }
