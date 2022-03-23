@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -119,6 +126,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.navigation a:hover {
+  color: #756257;
+}
+
+.navigation a:active {
+  color: rgba(117, 98, 87, 0.3);
 }
 
 .navigation-list .main:hover {
@@ -881,16 +896,29 @@ a[href^="tel:"] {
   list-style-type: none;
 }
 
-.links:hover {
+.link-home:hover {
   color: #ffffff;
   opacity: 0.6;
 }
 
-.links:focus {
+.link-hotels:hover {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.link-home:focus {
   color: #ffffff;
 }
 
-.links:active {
+.link-hotels:focus {
+  color: #ffffff;
+}
+
+.link-home:active {
+  opacity: 0.3;
+}
+
+.link-hotels:active {
   opacity: 0.3;
 }
 
@@ -1511,11 +1539,11 @@ a[href^="tel:"] {
 
 .more:hover {
   background: #615048;
-  border: 3px solid #83B3D3;
 }
 
 .more:focus {
   background: #615048;
+  border: 3px solid #83B3D3;
 }
 
 .more:active {
@@ -1543,13 +1571,14 @@ a[href^="tel:"] {
 }
 
 .favourite:hover {
-  background: #68A2CA;
-  border: 3px solid #756257;
+  border: 1px solid #756257;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .favourite:focus {
   background: #68A2CA;
-  border: 1px solid #756257;
+  border: 3px solid #756257;
 }
 
 .favourite:active {
@@ -1693,6 +1722,9 @@ a[href^="tel:"] {
   background: #68A2CA;
 }
 
+.load-button:focus {
+  border: 3px solid #756257;
+}
 
 /*Пагинация*/
 .pagination-container {
