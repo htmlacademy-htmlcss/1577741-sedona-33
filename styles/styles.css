@@ -14,7 +14,9 @@
   font-display: swap;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -332,6 +334,8 @@ body {
 
 .text-sedona {
   font-weight: normal;
+  padding-left: 90px;
+  padding-right: 90px;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
