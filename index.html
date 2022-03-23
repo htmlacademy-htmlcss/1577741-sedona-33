@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <link rel="icon" href="favicon.ico">
   <meta charset="utf-8">
   <title>Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
@@ -9,7 +10,7 @@
 <div class="container">
   <header class="main-header">
     <nav class="navigation">
-      <a href="index.html" class="logo"><img src="images/logo.svg" width="139" height="70" alt="логотип города Sedona"></a>
+      <a href="index.html" class="logo"><img src="images/logo.svg" width="139" height="70" alt="логотип города Седона"></a>
       <ul class="navigation-list">
         <li>
           <a href="index.html" class="main">Главная</a>
@@ -35,12 +36,12 @@
             <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.44382 17C9.14296 17 8.84211 16.9 8.64155 16.6C3.22622 10.5 1.92253 9.1 1.62168 8.7C0.91969 7.8 0.518555 6.6 0.518555 5.4C0.518555 2.4 2.92537 0 6.03416 0C7.33785 0 8.54126 0.5 9.5441 1.3C10.5469 0.5 11.8506 0 13.054 0C16.0625 0 18.5696 2.4 18.5696 5.4C18.5696 6.7 18.0682 7.9 17.266 8.8L10.2461 16.7C10.0455 16.9 9.84495 17 9.44382 17ZM3.42679 7.5C3.72764 7.9 6.93672 11.5 9.5441 14.4L15.7617 7.4C16.2631 6.9 16.4637 6.2 16.4637 5.4C16.4637 3.6 14.9594 2.1 13.1543 2.1C12.1515 2.1 11.1486 2.6 10.4467 3.4C10.1458 3.7 9.84495 3.8 9.5441 3.8C9.24325 3.8 8.9424 3.6 8.74183 3.4C8.03984 2.6 7.037 2.1 6.03416 2.1C4.22906 2.1 2.7248 3.6 2.7248 5.4C2.62452 6.3 3.02565 7 3.42679 7.5C3.3265 7.5 3.3265 7.5 3.42679 7.5Z"/>
             </svg>
-            <span class="favorite-number">12</span>
+            <span class="favorite-number"><span class="number-text">12</span></span>
             <span class="visually-hidden">Избранное</span>
           </a>
         </li>
-        <button class="button" type="button">Хочу сюда!</button>
       </ul>
+      <button class="button" type="button"><span class="button-text">Хочу сюда!</span></button>
     </nav>
   </header>
 
@@ -57,21 +58,21 @@
       </div>
 
       <div class="description-container">
-        <div class="cityDescription">
+        <div class="city-description">
           <div class="description-text">
             <h2 class="subtitle">Настоящий<br>городок</h2>
-            <span class="number">-№1-</span>
+            <span class="number">— №1 —</span>
             <p class="text-sedona">Седона-не аттракцион<br> для туристов, там течет<br> своя жизнь</p>
           </div>
         </div>
-        <img src="images/city.jpg" width="800" alt="картинка города">
+        <img src="images/city.jpg" width="800" height="384" alt="картинка города">
 
 
         <div class="city-features">
           <div class="block-home">
             <div class="icon feature-home"></div>
             <div class="city-text">
-              <h2 class="subtitle">Жилье</h2>
+              <h2 class="subtitle">Жильё</h2>
               <p class="text">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </div>
           </div>
@@ -79,47 +80,46 @@
             <div class="icon feature-food"></div>
             <div class="city-text">
               <h2 class="subtitle">Еда</h2>
-              <p class="text">Всегда заказывайте<br> фирменный бургер,<br> вы не разочаруетесь!</p>
+              <p class="text">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
             </div>
           </div>
           <div class="block-souvenir">
             <div class="icon feature-souvenir"></div>
             <div class="city-text">
               <h2 class="subtitle">Сувениры</h2>
-              <p class="text">Не только китайского,<br> но и местного<br> производства!</p>
+              <p class="text">Не только китайского,<br> но и настоящего местного<br> производства!</p>
             </div>
           </div>
         </div>
 
-
-        <div class="devilBridge">
-          <div class="devilBridge-description">
+      <img src="images/devil-bridge.jpg" width="800" height="384" alt="картинка мост дьявола">
+        <div class="devil-bridge">
+          <div class="devil-bridge-description">
             <h2 class="subtitle">Там есть<br>Мост Дьявола</h2>
-            <span class="number">-№2-</span>
+            <span class="number">— №2 —</span>
             <p class="text-sedona">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
           </div>
         </div>
-        <img src="images/devilBridge.jpg" width="800" alt="картинка моста дьявола">
 
         <div class="trip-features">
           <div class="block-square">
             <div class="trip-text">
               <h2 class="subtitle">Небольшая<br>площадь</h2>
-              <span class="number"->-№3-</span>
+              <span class="number">— №3 —</span>
               <p class="text">Все достопримечательности<br> находятся очень близко</p>
             </div>
           </div>
           <div class="block-road">
             <div class="road-text">
               <h2 class="subtitle">Красивая<br>дорога</h2>
-              <span class="number">-№4-</span>
+              <span class="number">— №4 —</span>
               <p class="text">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
             </div>
           </div>
           <div class="block-tourists">
             <div class="tourists-text">
               <h2 class="subtitle">Мало<br>туристов</h2>
-              <span class="number">-№5-</span>
+              <span class="number">— №5 —</span>
               <p class="text">Большинство едет в Гранд<br> Каньон и толпится там</p>
             </div>
           </div>
@@ -128,7 +128,7 @@
 
       <div class="interest">
         <div class="dates">Заинтересовались?</div>
-        <p class="tourDates">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="tour-dates">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <div class="search-hotels">
           <div class="search-hotels-title">
             <button type="button" class="hotel-search"><span class="sedona-hotel-search-text">Поиск гостиницы в Седоне</span></button>
@@ -143,12 +143,12 @@
       <form id="send-email" class="send-email" action="https://echo.htmlacademy.ru/" method="post">
         <label for="form-send-email" class="visually-hidden">Ваш e-mail</label>
         <input type="text" name="form-send-email" id="form-send-email" placeholder="Ваш e-mail" class="type-form">
-        <button class="submit" type="button"><span class="submit-text">Подписаться</span></button>
+        <button class="submit" type="submit"><span class="submit-text">Подписаться</span></button>
       </form>
     </div>
 <div class="modal-background">
     <div class="modal-window">
-      <form action="#" method="post">
+      <form action="https://echo.htmlacademy.ru/" method="post">
         <h3 class="modal-window-header">Поиск гостиницы в Седоне</h3>
         <a href="#" class="modal-close">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -158,13 +158,13 @@
 
         <div class="dates-arrival">
           <label for="dates" class="modal-text">Дата заезда:</label>
-          <input type="text" class="tour-dates" name="checkin" id="date" placeholder="27 апреля 2020">
+          <input type="text" class="tour-dates-modal" name="checkin" id="dates" placeholder="27 апреля 2020">
         </div>
         <p class="dates-text">Мы не можем отправить вас в прошлое.</p>
 
         <div class="dates-leaving">
           <label for="dates-out" class="modal-text">Дата выезда:</label>
-          <input type="text" class="tour-dates" name="checkout" id="date" placeholder="1 сентября 2021">
+          <input type="text" class="tour-dates-modal" name="checkout" id="dates-out" placeholder="1 сентября 2021">
         </div>
         <p class="leaving-text">На эти даты есть свободные номера. Пока есть.</p>
 
@@ -173,7 +173,7 @@
             <label for="grown-ups" class="modal-text">Взрослые:</label>
             <div class="recount">
             <button class="minus" type="button">-</button>
-            <input type="number-people" class="number-people" name="grown-ups" min="1" id="grown-ups" value="2">
+            <input type="number" class="number-people" name="grown-ups" min="1" id="grown-ups" value="2">
             <button class="plus" type="button">+</button>
           </div>
           </div>
@@ -186,14 +186,14 @@
           </div>
             <div class="recount">
             <button class="minus" type="button">-</button>
-            <input type="number-people" class="number-people" name="child" id="kids" value="1">
+            <input type="number" class="number-people" name="child" id="kids" value="1">
             <button class="plus" type="button">+</button>
           </div>
           </div>
         </div>
 
 
-        <input class="search-btn btn" type="submit" id="search-button" name="search-btn" class="search-btn-text" value="Найти">
+        <input type="submit" id="search-button" name="search-btn" class="search-btn-text" value="Найти">
 
       </form>
     </div>
@@ -204,28 +204,28 @@
   <footer class="footer">
     <ul class="social-list">
       <li class="social-list-item">
-        <a href="https://twitter.com/htmlacademy_ru">
+        <a href="https://twitter.com/htmlacademy_ru" class="social-list-link"><span class="visually-hidden">Twitter</span>
           <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M11.6 0.200056C13.4 -0.299944 14.8 0.500056 15.4 1.40006C16.1 1.20006 16.8 0.900056 17.5 0.700056C17.5 1.60006 16.9 2.20006 16.6 2.50006C17.3 2.60006 18 1.90006 18 1.90006C17.8 2.90006 16.9 3.70006 16.3 3.90006C16.1 10.7001 13 15.1001 5.7 15.0001C5.1 15.0001 5.8 15.0001 5.2 15.0001C4.8 15.0001 0.8 14.5001 0 13.1001C2.4 13.3001 4.1 12.7001 5 11.9001C4 11.6001 2.1 11.5001 1.8 9.00006C2.2 9.10006 2.4 9.20006 3.1 9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006 0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z" fill="#83B3D3"/>
           </svg>
         </a>
       </li>
       <li class="social-list-item">
-        <a href="https://www.facebook.com/htmlacademy" class="facebook">
+        <a href="https://www.facebook.com/htmlacademy" class="facebook social-list-link"><span class="visually-hidden">Facebook</span>
           <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z" fill="#83B3D3"/>
           </svg>
         </a>
       </li>
       <li class="social-list-item">
-        <a href="https://www.youtube.com/c/HTMLAcademyRUS">
+        <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social-list-link"><span class="visually-hidden">Youtube</span>
           <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z" fill="#83B3D3"/>
           </svg>
         </a>
       </li>
     </ul>
-    <a href="tel:+7(812)812-12-12" class="tel">+7(812)812-12-12</a>
+    <a href="tel:+7(812)812-12-12" class="tel">+7 (812) 812-12-12</a>
     <a href="https://htmlacademy.ru" class="html-logo">
     <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 12.8999V15.4999H2.5V12.8999H0Z"/>
