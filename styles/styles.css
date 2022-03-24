@@ -1,15 +1,8 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -17,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -82,7 +75,7 @@ body {
 /*Навигация*/
 .navigation {
   width: 1060px;
-  height: 70px;
+  height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,12 +89,11 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 46px;
-  margin-top: 0;
+  padding-left: 47px;
+  margin-top: -5px;
   margin-bottom: 0;
   font-size: 17px;
   line-height: 23px;
-  padding-left: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   list-style-type: none;
@@ -112,6 +104,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+  padding-right: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,21 +148,15 @@ body {
 .main::after {
   content: '';
   width: 100%;
-  height: 2px;
   background-color: #000000;
   display: block;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 4px;
 }
 
 .main:active::after {
   background-color: #756257;
-}
-
-.sedona {
-  padding-left: 34px;
-  padding-right: 34px;
 }
 
 .navigation-user {
@@ -181,7 +168,12 @@ body {
           align-items: center;
   list-style-type: none;
   margin-left: auto;
+  margin-top: 7px;
   color: #333333;
+}
+
+.navigation-link {
+  padding-right: 34px;
 }
 
 .navigation-link-search {
@@ -208,8 +200,8 @@ body {
   width: 18px;
   height: 17px;
   position: relative;
-  margin-right: 33px;
-  margin-left: 24px;
+  margin-right: -3px;
+  margin-left: -12px;
 }
 
 .navigation-link-favorite:hover svg {
@@ -282,7 +274,9 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   border-radius: 4px;
-  margin-top: 14px;
+  margin-top: 11px;
+  padding-top: 5px;
+  padding-left: 3px;
   border: none;
 }
 
@@ -310,13 +304,15 @@ body {
   background-color: #ffffff;
   padding-top: 63px;
   padding-bottom: 80px;
+  padding-left: 240px;
+  padding-right: 240px;
   text-align: center;
 }
 
 .promo .title {
   font-weight: 700;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 39px;
   text-transform: uppercase;
   margin: 0;
 }
@@ -351,11 +347,13 @@ body {
   text-align: center;
   float: left;
   margin: 0;
+  padding-top: 98px;
+  padding-bottom: 87px;
+  padding-left: 90px;
+  padding-right: 90px;
 }
 
 .description-text {
-  padding-top: 98px;
-  padding-bottom: 87px;
   margin: 0;
   color: #fff;
   text-align: center;
@@ -367,14 +365,10 @@ body {
   line-height: 21px;
   text-align: center;
   margin: 0;
-  padding-left: 75px;
-  padding-right: 75px;
 }
 
 .text-sedona {
   font-weight: normal;
-  padding-left: 90px;
-  padding-right: 90px;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -440,12 +434,20 @@ body {
   float: left;
   width: 400px;
   margin-right: 0;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 79px;
+  padding-top: 89px;
 }
 
 .block-food {
   background-color: rgba(131, 179, 211, 0.2);
   float: left;
   width: 400px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 79px;
+  padding-top: 89px;
 }
 
 .block-souvenir {
@@ -453,12 +455,10 @@ body {
   float: left;
   width: 400px;
   margin-right: 0;
-}
-
-.city-text {
-  text-align: center;
-  padding-bottom: 88px;
-  margin: 0;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 79px;
+  padding-top: 89px;
 }
 
 .icon {
@@ -472,17 +472,15 @@ body {
 
 .feature-home {
   background-image: url("../images/home.png");
-  margin-top: 88px;
 }
 
 .feature-food {
   background-image: url("../images/food.png");
-  margin-top: 90px;
 }
 
 .feature-souvenir {
   background-image: url("../images/souvenir.png");
-  margin-top: 87px;
+
 }
 
 .number {
@@ -508,6 +506,8 @@ body {
 .devil-bridge-description {
   padding-top: 98px;
   padding-bottom: 87px;
+  padding-left: 90px;
+  padding-right: 90px;
   margin: 0;
   color: #fff;
   text-align: center;
@@ -523,49 +523,45 @@ body {
 
 .trip-features .subtitle {
   color: #000000;
-  padding-top: 98px;
-}
-
-.trip-text {
-  padding-bottom: 108px;
-  text-align: center;
-  margin: 0;
-}
-
-.road-text {
-  padding-bottom: 108px;
-  text-align: center;
-  margin: 0;
-}
-
-.tourists-text {
-  padding-bottom: 108px;
-  text-align: center;
-  margin: 0;
 }
 
 .block-square {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   margin: 0;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 108px;
+  padding-top: 98px;
 }
 
 .block-road {
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
   margin: 0;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 108px;
+  padding-top: 98px;
 }
 
 .block-tourists {
   background-color: rgba(131, 179, 211, 0.1);
   width: 400px;
   margin: 0;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 108px;
+  padding-top: 98px;
 }
 
 /*Даты поездки*/
 .interest {
   width: 1200px;
   padding-bottom: 93px;
+  padding-top: 91px;
+  padding-left: 312px;
+  padding-right: 313px;
 }
 
 .dates {
@@ -574,7 +570,6 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 91px;
   color: #000000;
   margin: 0;
 }
@@ -633,7 +628,10 @@ body {
   background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 93px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-right: 200px;
+  padding-left: 200px;
 }
 
 .send-email {
@@ -654,7 +652,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 94px;
   margin: 0;
 }
 
@@ -676,11 +673,11 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-  opacity: 0.6;
-  border: none;
+  border: 3px solid #f2f2f2;
   margin: 0;
   padding: 0 22px;
   border-radius: 10px 0px 0px 10px;
+  box-sizing: border-box;
 }
 
 .type-form:hover {
@@ -689,12 +686,13 @@ body {
 
 .type-form:focus {
   background: #E6E6E6;
-  border: 3px solid #83B3D3;
+  border-color: #83B3D3;
+  outline: none;
 }
 
 .type-form:invalid {
   background: #FFFFFF;
-  border: 2px solid #FF5757;
+  border-color: #FF5757;
 }
 
 .submit {
@@ -758,6 +756,8 @@ body {
 }
 
 .social-list {
+  width: 120px;
+  padding-left: 29px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -775,7 +775,6 @@ body {
 .social-list-link {
   width: 40px;
   height: 40px;
-  margin-left: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -879,6 +878,8 @@ a[href^="tel:"] {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
+  padding-top: 52px;
+  padding-bottom: 86px;
   padding-left: 71px;
   padding-right: 71px;
 }
@@ -950,7 +951,6 @@ a[href^="tel:"] {
   font-weight: bold;
   font-size: 60px;
   line-height: 78px;
-  padding-top: 35px;
   text-align: left;
   margin: 0;
   text-transform: none;
@@ -1008,32 +1008,28 @@ a[href^="tel:"] {
   background-repeat: no-repeat;
   color: #3F5E72;
   background-position: center;
+  opacity: 0;
+  z-index: 2;
 }
 
+.structure-input:checked + .structure-mark-checked {
+  opacity: 1;
+}
+
+.structure-input:hover ~ .structure-mark,
 .structure-input:hover + .structure-mark-checked {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
+.structure-input:focus ~ .structure-mark,
 .structure-input:focus + .structure-mark-checked {
   background-color: rgba(255, 255, 255, 0.6);
-  border: 3px solid #83B3D3;
-}
-
-.structure-input:active + .structure-mark-checked {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.structure:hover .structure-mark {
-  opacity: 0.6;
-}
-
-.structure-input:focus + .structure-mark {
-  background: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
 }
 
-.structure-input:active + .structure-mark {
-  background: rgba(255, 255, 255, 0.3);
+.structure-input:active ~ .structure-mark,
+.structure-input:active + .structure-mark-checked {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Radio */
@@ -1059,7 +1055,7 @@ a[href^="tel:"] {
   border: none;
   padding: 0;
   margin: 0;
-  margin-right: 67px;
+  padding-right: 67px;
   text-align: left;
 }
 
@@ -1076,6 +1072,7 @@ a[href^="tel:"] {
 .catalog-filter-list {
   padding-left: 0;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .catalog-filter-item {
@@ -1084,7 +1081,7 @@ a[href^="tel:"] {
 }
 
 .catalog-filter-item:last-of-type {
-  padding-bottom: 0;
+  padding-bottom: 13px;
 }
 
 .filter-price {
@@ -1216,6 +1213,7 @@ a[href^="tel:"] {
 
 .range-toggle {
   position: absolute;
+  width: 20px;
   height: 20px;
   background: #ffffff;
   border: 2px solid #ffffff;
@@ -1262,13 +1260,8 @@ a[href^="tel:"] {
       -ms-flex-direction: row;
           flex-direction: row;
   padding-top: 45px;
-  padding-bottom: 84px;
   border: none;
   margin: 0;
-}
-
-.catalog-buttons {
-  padding-left: 0;
 }
 
 .submit-button {
@@ -1336,11 +1329,11 @@ a[href^="tel:"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1057px;
   text-align: center;
-  margin-left: 71px;
-  margin-right: 72px;
   padding-top: 44px;
+  padding-left: 71px;
+  padding-right: 71px;
+  margin: 0;
 }
 
 .catalog .subtitle {
@@ -1523,7 +1516,6 @@ a[href^="tel:"] {
 
 .more {
   width: 133px;
-  height: 37px;
   color: #ffffff;
   font-weight: bold;
   font-size: 16px;
@@ -1535,6 +1527,8 @@ a[href^="tel:"] {
   border-radius: 4px;
   margin-right: 26px;
   border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .more:hover {
@@ -1557,7 +1551,6 @@ a[href^="tel:"] {
 
 .favourite {
   width: 140px;
-  height: 37px;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -1568,6 +1561,8 @@ a[href^="tel:"] {
   border-radius: 4px;
   float: left;
   border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .favourite:hover {
@@ -1596,7 +1591,6 @@ a[href^="tel:"] {
   background: #7DB54F;
   border-radius: 4px;
   width: 140px;
-  height: 37px;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -1604,6 +1598,8 @@ a[href^="tel:"] {
   text-transform: uppercase;
   float: left;
   border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .favourite-diablo:focus {
@@ -1636,9 +1632,9 @@ a[href^="tel:"] {
 }
 
 .star-amara {
-  background-image: url("../images/rate-4.png");
-  background-repeat: no-repeat;
-  width: 91px;
+  background-image: url("../images/star-raiting.svg");
+  background-repeat: space;
+  width: 88px;
   height: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1649,9 +1645,9 @@ a[href^="tel:"] {
 }
 
 .star-desert {
-  background-image: url("../images/rate-3.png");
-  background-repeat: no-repeat;
-  width: 72px;
+  background-image: url("../images/star-raiting.svg");
+  background-repeat: space;
+  width: 69px;
   height: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1661,9 +1657,9 @@ a[href^="tel:"] {
 }
 
 .star-villas {
-  background-image: url("../images/rate-2.png");
-  background-repeat: no-repeat;
-  width: 40px;
+  background-image: url("../images/star-raiting.svg");
+  background-repeat: space;
+  width: 42px;
   height: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1673,9 +1669,9 @@ a[href^="tel:"] {
 }
 
 .star-green {
-  background-image: url("../images/rate-2.png");
-  background-repeat: no-repeat;
-  width: 43px;
+  background-image: url("../images/star-raiting.svg");
+  background-repeat: space;
+  width: 42px;
   height: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1699,6 +1695,13 @@ a[href^="tel:"] {
   padding-top: 9px;
 }
 
+.divider {
+  width: 1055px;
+  border: 1px solid #E6E6E6;
+  margin-left: 73px;
+  margin-right: 72px;
+}
+
 .load-button {
   width: 620px;
   height: 60px;
@@ -1714,8 +1717,9 @@ a[href^="tel:"] {
           align-items: center;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 68px;
-  margin-top: 64px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 0;
 }
 
 .load-button:hover {
@@ -1862,6 +1866,8 @@ a[href^="tel:"] {
           flex-direction: row;
   width: 1200px;
   padding-bottom: 140px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .index-send-form-catalog {
@@ -1892,7 +1898,7 @@ a[href^="tel:"] {
 
 /*Модальное окно*/
 .modal-background {
-  display: none;
+ display: none;
   background-color: rgba(242, 242, 242, 0.8);
   position: fixed;
   top: 0;
@@ -2006,6 +2012,11 @@ a[href^="tel:"] {
   text-align: center;
 }
 
+.number-people::-webkit-outer-spin-button,
+.number-people::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 .recount {
   height: 50px;
   position: relative;
@@ -2016,13 +2027,17 @@ a[href^="tel:"] {
 
 .minus {
   position: absolute;
-  width: 1px;
-  left: 19px;
-  top: 18px;
+  width: 25px;
+  height: 25px;
   border: none;
   padding: 0;
   color: #000000;
   opacity: 0.3;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
 }
 
 .minus:hover {
@@ -2034,15 +2049,13 @@ a[href^="tel:"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 25px;
-  height: 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 3px solid #83B3D3;
+  border-color: #83B3D3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
@@ -2052,13 +2065,17 @@ a[href^="tel:"] {
 
 .plus {
   position: absolute;
-  width: 1px;
-  top: 18px;
-  left: 110px;
+  width: 25px;
+  height: 25px;
   border: none;
   padding: 0;
   color: #000000;
   opacity: 0.3;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
 }
 
 .plus:hover {
@@ -2067,15 +2084,13 @@ a[href^="tel:"] {
 }
 
 .plus:focus {
-  width: 25px;
-  height: 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 3px solid #83B3D3;
+  border-color: #83B3D3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
@@ -2173,6 +2188,8 @@ a[href^="tel:"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 3px solid #F2F2F2;
+  box-sizing: border-box;
 }
 
 .tour-dates-modal:hover {
@@ -2182,13 +2199,14 @@ a[href^="tel:"] {
 
 .tour-dates-modal:focus {
   background: #E6E6E6;
-  border: 3px solid #83B3D3;
+  border-color: #83B3D3;
   border-radius: 4px;
+  outline: none;
 }
 
 .tour-dates-modal:active {
   background: #FFFFFF;
-  border: 2px solid #000000;
+  border-color: #000000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;

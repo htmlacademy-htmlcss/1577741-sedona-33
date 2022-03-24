@@ -17,7 +17,7 @@
           <a href="index.html">Главная</a>
         </li>
         <li class="navigation-link">
-          <a href="#" class="sedona">О Седоне</a>
+          <a href="#">О Седоне</a>
         </li>
         <li>
           <a href="catalog.html" class="main">Гостиницы</a>
@@ -67,23 +67,26 @@
           <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
           <label class="structure">
-              <input class="visually-hidden structure-input" type="checkbox" name="Бассейн" checked>
+              <input class="visually-hidden structure-input" type="checkbox" name="living-structure" value="Бассейн" checked>
               <span class="structure-mark-checked"></span>
+              <span class="structure-mark"></span>
 
               <span class="structure-label">Бассейн</span>
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="structure">
-              <input class="visually-hidden structure-input" type="checkbox" name="Парковка" checked>
+              <input class="visually-hidden structure-input" type="checkbox" name="living-structure" value="Парковка" checked>
               <span class="structure-mark-checked"></span>
+              <span class="structure-mark"></span>
 
               <span class="structure-label">Парковка</span>
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="structure">
-              <input class="visually-hidden structure-input" type="checkbox" name="Wi-Fi">
+              <input class="visually-hidden structure-input" type="checkbox" name="living-structure" value="Wi-Fi">
+              <span class="structure-mark-checked"></span>
               <span class="structure-mark"></span>
 
               <span class="structure-label">Wi-Fi</span>
@@ -232,7 +235,9 @@
           </li>
         </ul>
       </div>
+      <div class="divider"></div>
       <button class="load-button" type="button">Загрузить еще</button>
+      <div class="divider"></div>
     </div>
     <div class="pagination-container">
       <ul class="pagination">
